@@ -1,0 +1,16 @@
+# Deny everything by default; only the personal-config files below are tracked.
+*
+
+!.gitignore
+!CLAUDE.md
+!keybindings.json
+!settings.json
+
+!commands/
+!commands/**
+
+!skills/
+!skills/**
+
+!plugins/
+!plugins/blocklist.json

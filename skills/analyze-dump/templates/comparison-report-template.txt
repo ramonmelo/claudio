@@ -1,0 +1,94 @@
+================================================================================
+          {{PROCESS_NAME}} MEMORY GROWTH ANALYSIS REPORT
+          Baseline vs {{ITERATION_COUNT}} Iterations Comparison
+================================================================================
+
+Generated: {{REPORT_DATE}}
+Dump Timestamps: {{DUMP_TIMESTAMP_RANGE}}
+
+================================================================================
+1. ENVIRONMENT
+================================================================================
+
+  OS:              {{OS_VERSION}}
+  Edition:         {{OS_EDITION}}
+  Build:           {{OS_BUILD}}
+  Processors:      {{PROCESSOR_COUNT}}
+  System Uptime:   {{SYSTEM_UPTIME}}
+  Process Uptime:  {{PROCESS_UPTIME}} (baseline)
+  Kernel Time:     {{KERNEL_TIME}}
+  User Time:       {{USER_TIME}}
+  Process:         {{PROCESS_NAME_PID}}
+  Path:            {{PROCESS_PATH}}
+  Runtime:         {{RUNTIME_VERSION}}
+  Dump Type:       {{DUMP_TYPE}}
+
+  ANALYSIS: {{ENVIRONMENT_ANALYSIS}}
+
+================================================================================
+2. DUMP FILE SIZE TREND (Process Virtual Memory)
+================================================================================
+
+  {{FILE_SIZE_TABLE}}
+
+  Growth rate: {{GROWTH_RATE_SUMMARY}}
+
+  ANALYSIS: {{FILE_SIZE_ANALYSIS}}
+
+================================================================================
+3. NATIVE MEMORY (!address -summary)
+================================================================================
+
+  {{NATIVE_MEMORY_TABLE}}
+
+  ANALYSIS: {{NATIVE_MEMORY_ANALYSIS}}
+
+================================================================================
+4. MANAGED GC HEAP TREND
+================================================================================
+
+  {{GC_HEAP_TREND_TABLE}}
+
+  Pattern: {{GC_HEAP_PATTERN}}
+
+  ANALYSIS: {{GC_HEAP_TREND_ANALYSIS}}
+
+================================================================================
+5. TOP MANAGED HEAP CONSUMERS
+================================================================================
+
+  {{HEAP_CONSUMERS_TABLE}}
+
+  ANALYSIS: {{HEAP_CONSUMERS_ANALYSIS}}
+
+================================================================================
+6. THREAD SUMMARY
+================================================================================
+
+  {{THREAD_TREND_TABLE}}
+
+  ANALYSIS: {{THREAD_ANALYSIS}}
+
+================================================================================
+7. SYNC BLOCKS & FINALIZER QUEUE
+================================================================================
+
+  {{SYNCBLK_SUMMARY}}
+
+  {{FINALIZER_SUMMARY}}
+
+================================================================================
+8. KEY LOADED MODULES
+================================================================================
+
+  {{MODULES_SUMMARY}}
+
+================================================================================
+9. KEY FINDINGS & RECOMMENDATIONS
+================================================================================
+
+  {{FINDINGS_LIST}}
+
+================================================================================
+  END OF REPORT
+================================================================================

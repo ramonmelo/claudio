@@ -1,0 +1,70 @@
+{
+  "env": {
+    "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1",
+    "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
+    "EDITOR": "code --wait"
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git branch --contains *)",
+      "Bash(git ls-files *)",
+      "Bash(git blame *)",
+      "Bash(git reset *)",
+      "Bash(git notes show *)",
+      "Bash(cat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(less *)",
+      "Bash(ls *)",
+      "Bash(pwd *)",
+      "Bash(tree *)",
+      "Bash(grep *)",
+      "Bash(diff *)",
+      "Bash(stat *)",
+      "Bash(file *)",
+      "Bash(du *)",
+      "Bash(df *)",
+      "Bash(echo *)",
+      "Bash(awk *)",
+      "Bash(mkdir *)",
+      "Bash(touch *)",
+      "Bash(wc *)",
+      "Bash(sort *)"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(~/.ssh/*)",
+      "Read(~/.config/*)",
+      "Read(*.lic)",
+      "Read(*.license)",
+      "WebFetch",
+      "Bash(curl *)",
+      "Bash(wget *)"
+    ],
+    "defaultMode": "plan"
+  },
+  "enabledPlugins": {
+    "warp@claude-code-warp": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-code-warp": {
+      "source": {
+        "source": "github",
+        "repo": "warpdotdev/claude-code-warp"
+      }
+    }
+  },
+  "effortLevel": "high",
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "editorMode": "normal",
+  "skipAutoPermissionPrompt": true,
+  "voiceEnabled": false
+}

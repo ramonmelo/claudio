@@ -1,0 +1,162 @@
+================================================================================
+          {{PROCESS_NAME}} CRASH DUMP ANALYSIS REPORT
+          {{DUMP_FILENAME}}
+================================================================================
+
+Generated: {{REPORT_DATE}}
+Dump Timestamp: {{DUMP_TIMESTAMP}}
+
+================================================================================
+1. ENVIRONMENT
+================================================================================
+
+  OS:              {{OS_VERSION}}
+  Edition:         {{OS_EDITION}}
+  Build:           {{OS_BUILD}}
+  Processors:      {{PROCESSOR_COUNT}}
+  System Uptime:   {{SYSTEM_UPTIME}}
+  Process Uptime:  {{PROCESS_UPTIME}}
+  Kernel Time:     {{KERNEL_TIME}}
+  User Time:       {{USER_TIME}}
+  Process:         {{PROCESS_NAME_PID}}
+  Version:         {{PROCESS_VERSION}}
+  Runtime:         {{RUNTIME_VERSION}}
+  Dump Type:       {{DUMP_TYPE}}
+
+================================================================================
+2. EXCEPTION / CRASH CAUSE
+================================================================================
+
+  Exception Code:  {{EXCEPTION_CODE}}
+  Exception Addr:  {{EXCEPTION_ADDRESS}}
+  Failure Bucket:  {{FAILURE_BUCKET}}
+  Faulting Symbol: {{FAULTING_SYMBOL}}
+  Failure Hash:    {{FAILURE_HASH}}
+
+  ROOT CAUSE: {{ROOT_CAUSE_NARRATIVE}}
+
+  {{CRASH_THREAD_REFERENCE}}
+
+================================================================================
+3. CRASHING THREAD — MANAGED STACK ({{CRASH_THREAD_ID}})
+================================================================================
+
+  {{MANAGED_CALL_STACK}}
+
+  ANALYSIS: {{CRASHING_THREAD_ANALYSIS}}
+
+================================================================================
+4. MANAGED EXCEPTION
+================================================================================
+
+  {{MANAGED_EXCEPTION_INFO}}
+
+================================================================================
+5. THREAD SUMMARY
+================================================================================
+
+  Total Managed Threads:  {{TOTAL_THREADS}}
+  Unstarted:              {{UNSTARTED_THREADS}}
+  Background:             {{BACKGROUND_THREADS}}
+  Pending:                {{PENDING_THREADS}}
+  Dead:                   {{DEAD_THREADS}}
+  Hosted Runtime:         {{HOSTED_RUNTIME}}
+
+  Thread Breakdown:
+  {{THREAD_BREAKDOWN_LIST}}
+
+================================================================================
+6. THREAD POOL
+================================================================================
+
+  Type:            {{THREADPOOL_TYPE}}
+  CPU Utilization: {{CPU_UTILIZATION}}
+  Workers Total:   {{WORKERS_TOTAL}}
+  Workers Running: {{WORKERS_RUNNING}}
+  Workers Idle:    {{WORKERS_IDLE}}
+  Worker Min:      {{WORKER_MIN}}
+  Worker Max:      {{WORKER_MAX}}
+
+  ANALYSIS: {{THREADPOOL_ANALYSIS}}
+
+================================================================================
+7. GC HEAP
+================================================================================
+
+  Number of GC Heaps: {{GC_HEAP_COUNT}}
+
+  GC Allocated Heap Size:  {{GC_ALLOCATED_SIZE}}
+  GC Committed Heap Size:  {{GC_COMMITTED_SIZE}}
+
+  Breakdown:
+    Small Object Heap (SOH):
+      Generation 0:   {{GEN0_SIZE}}
+      Generation 1:   {{GEN1_SIZE}}
+      Generation 2:   {{GEN2_SIZE}}
+    Large Object Heap (LOH):  {{LOH_SIZE}}
+    Pinned Object Heap (POH): {{POH_SIZE}}
+    NonGC Heap:               {{NONGC_SIZE}}
+
+  ANALYSIS: {{GC_HEAP_ANALYSIS}}
+
+================================================================================
+8. TOP HEAP CONSUMERS (by TotalSize)
+================================================================================
+
+  {{HEAP_CONSUMERS_TABLE}}
+
+  Total objects:             {{TOTAL_OBJECTS}}
+  Total size:             {{TOTAL_HEAP_SIZE}}
+
+  NOTE: {{HEAP_CONSUMERS_NOTES}}
+
+================================================================================
+9. SYNC BLOCKS
+================================================================================
+
+  Total:             {{SYNCBLK_TOTAL}}
+  CCW:               {{SYNCBLK_CCW}}
+  RCW:               {{SYNCBLK_RCW}}
+  ComClassFactory:   {{SYNCBLK_COMCLASS}}
+  Free:              {{SYNCBLK_FREE}}
+
+  ANALYSIS: {{SYNCBLK_ANALYSIS}}
+
+================================================================================
+10. FINALIZER QUEUE
+================================================================================
+
+  {{FINALIZER_PER_HEAP_BREAKDOWN}}
+
+  Total finalizable objects: {{FINALIZER_TOTAL}}
+
+  Top finalizable types:
+  {{FINALIZER_TOP_TYPES}}
+
+  ANALYSIS: {{FINALIZER_ANALYSIS}}
+
+================================================================================
+11. KEY LOADED MODULES
+================================================================================
+
+  {{MODULES_HOST_AND_NATIVE}}
+
+  {{MODULES_MANAGED_STACK}}
+
+  {{MODULES_NETWORKING}}
+
+  {{MODULES_SERIALIZATION}}
+
+  {{MODULES_MONITORING}}
+
+  {{MODULES_NOTES}}
+
+================================================================================
+12. KEY FINDINGS & RECOMMENDATIONS
+================================================================================
+
+  {{FINDINGS_LIST}}
+
+================================================================================
+  END OF REPORT
+================================================================================

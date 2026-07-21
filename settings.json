@@ -1,11 +1,13 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "env": {
-    "CLAUDE_CODE_DISABLE_MOUSE_CLICKS": "1",
     "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
     "EDITOR": "code --wait"
   },
   "includeCoAuthoredBy": false,
   "permissions": {
+    "defaultMode": "plan",
+    "disableBypassPermissionsMode": "disable",
     "allow": [
       "Bash(git status *)",
       "Bash(git log *)",
@@ -47,8 +49,7 @@
       "WebFetch",
       "Bash(curl *)",
       "Bash(wget *)"
-    ],
-    "defaultMode": "plan"
+    ]
   },
   "enabledPlugins": {
     "warp@claude-code-warp": true
@@ -61,10 +62,9 @@
       }
     }
   },
-  "effortLevel": "high",
+  "effortLevel": "xhigh",
   "autoUpdatesChannel": "latest",
   "tui": "fullscreen",
   "editorMode": "normal",
-  "skipAutoPermissionPrompt": true,
   "voiceEnabled": false
 }

@@ -1,5 +1,8 @@
 # CLAUDE.md
 
+## Knowledge
+* If something can be inferred from the code, don't write it on READMEs or CLAUDE.md, otherwise the information can get old.
+
 ## Style
 * Be brief and direct. No jargon, no filler words.
 * Do not manually break lines in documentation or text files. Write paragraphs as single long lines and rely on editor line wrapping.

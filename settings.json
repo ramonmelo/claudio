@@ -6,8 +6,6 @@
   },
   "includeCoAuthoredBy": false,
   "permissions": {
-    "defaultMode": "plan",
-    "disableBypassPermissionsMode": "disable",
     "allow": [
       "Bash(git status *)",
       "Bash(git log *)",
@@ -49,8 +47,11 @@
       "WebFetch",
       "Bash(curl *)",
       "Bash(wget *)"
-    ]
+    ],
+    "defaultMode": "plan",
+    "disableBypassPermissionsMode": "disable"
   },
+  "model": "opusplan",
   "enabledPlugins": {
     "warp@claude-code-warp": true
   },
@@ -66,5 +67,8 @@
   "autoUpdatesChannel": "latest",
   "tui": "fullscreen",
   "editorMode": "normal",
-  "voiceEnabled": false
+  "voiceEnabled": false,
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "outputStyle": "Explanatory"
 }

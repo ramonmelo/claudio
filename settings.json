@@ -63,7 +63,7 @@
     "defaultMode": "plan",
     "disableBypassPermissionsMode": "disable"
   },
-  "model": "opusplan",
+  "model": "opus[1m]",
   "enabledPlugins": {
     "warp@claude-code-warp": true
   },

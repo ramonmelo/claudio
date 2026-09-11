@@ -6,6 +6,7 @@
 * Comments state what the code is, not why it was decided ("so that…", "otherwise…") — rationale goes stale. Applies to code comments and accompanying text files.
 * When a documented limitation, risk, or caveat is resolved, delete the entry (and its section if empty) rather than annotating it as fixed.
 * Check recent `git log` in the current repo and match its commit message style (prefixes, tone) before writing a new one.
+* When creating commits, **do not** write anything extra other than the main commit message, and leave the commit description empty.
 * Split unrelated changes into separate, self-contained commits — one per logically distinct concern, even within the same file — so history stays reviewable and revertable independently.
 * Use ASCII hyphens (-) only.
 * If you are unsure about any information, API, function signature, file path, or implementation detail, stop and ask me rather than guessing. Never fabricate code, file contents, or terminal output. If you don't know something, say so.
